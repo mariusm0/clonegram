@@ -1,0 +1,207 @@
+.home {
+    background-color: #AFC1D6;
+    min-height: calc(100vh - var(--navbar-height));
+    font-family: "Roboto Mono";
+
+    display: grid;
+    grid-template-columns: 1fr 300px;
+}
+
+p {
+    margin: 0px;
+}
+
+.new-post-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    background-color: #655A7C;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    font-family: "Roboto Mono";
+    border: none;
+    border: 2px solid white;
+    transition: 100ms;
+}
+
+.new-post-btn:hover {
+    transform: translateY(-10px);
+    box-shadow: -5px 5px 5px #888;
+}
+
+.home-container {
+    padding-top: 10px;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    place-items: center;
+    gap: 12px;
+}
+
+.post-view {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #655a7c;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    width: 700px;
+    border-radius: 4px;
+}
+
+.post-view .title {
+    padding: 5px;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-view .title, .post-view .caption, .post-view .post-image {
+    border-left: 5px solid #655A7C;
+    border-right: 5px solid #655A7C;
+}
+
+.post-view .caption {
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.post-view .time-stamp {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+}
+
+.post-view .like-btn {
+    width: fit-content;
+    padding: 2px 4px;
+    font-family: "Roboto Mono", monospace;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 18px;
+    margin: 5px;
+    border: 2px solid white;
+    transition: 200ms;
+}
+
+.post-view .like-btn:hover {
+    transform: translateX(5px);
+}
+
+.post-user {
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+    background-color: brown;
+    border: 5px solid brown;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 5px;
+}
+
+.like-info {
+    font-family: monospace;
+}
+
+.home-alert {
+    background-color: #CEC9F2;
+    padding: 5px 10px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.show-all {
+    background-color: #d6ca98;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.show-all:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    margin-top: 30px;
+    background-color: #3d405b;
+    height: min-content;
+    width: 250px;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sort-field {
+    display: flex;
+    gap: 4px;
+}
+
+.search-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.search-field input {
+    border: 2px solid white;
+    flex: 1 1 auto;
+    width: auto !important;
+    height: 20px;
+    background-color: #3d405b;
+    color: white;
+}
+
+.search-field input:focus {
+    outline: none;
+}
+
+.search-field ul {
+    padding: 0px 8px;
+    margin: 0px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.search-field ul li {
+    padding: 2px 8px;
+    background-color: #655A7C;
+    width: 90%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-field ul li a {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.search-field ul li:hover a {
+    text-decoration: underline;
+    color: white !important;
+}
+
+.sidebar select {
+    font-family: "Roboto Mono";
+    font-size: 16px;
+    border-radius: 4px;
+    border: 2px solid white;
+    background-color: #3d405b;
+    color: white;
+    flex: 1 1 auto;
+    
+}
+

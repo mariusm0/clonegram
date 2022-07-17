@@ -1,0 +1,251 @@
+.profile-container {
+    min-height: calc(100vh - var(--navbar-height));
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    background-color:#AB92BF;
+}
+
+.profile-card {
+    background-color: #cef9f2;
+    height: 250px;
+    padding: 5px;
+    font-family: "Roboto Mono";
+
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.profile-card .username {
+    font-size: 24px !important;
+    font-weight: 700;
+}
+
+.form-card-profile {
+    background-color: #cef9f2;
+    height: 250px;
+    font-family: "Roboto Mono";
+
+    display: grid;
+    grid-template-columns: 250px auto auto auto;
+    grid-auto-rows: 1fr;
+}
+
+.form-card-profile > *:nth-child(2n) {
+    background-color: #afc1d6;
+}
+
+.form-card-profile #display-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+}
+
+.form-card-profile .input-field {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+.form-card-profile .text-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-card-profile .custom-error-field {
+    color: red;
+}
+
+.form-card-profile > * {
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.profile-card > .text-info {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    flex: 1 1 auto;
+}
+
+.profile-card > .text-info > * {
+    border-bottom: 1px solid black;
+    margin-bottom: 3px;
+    font-size: 19px;
+}
+
+.profile-card p {
+    width: auto;
+    margin: 0px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+    font-size: 18px;
+}
+
+.user-posts {
+    background-color: #afc1d6;
+    grid-column: 2;
+}
+
+.update-btn {
+    width: fit-content;
+    font-family: "Roboto Mono";
+    font-size: 16px;
+    background-color: #AB92BF;
+    border-radius: 4px;
+    border: 3px solid white !important;
+    color: whitesmoke;
+    position: relative;
+    transition: 300ms;
+}
+
+.update-btn:hover, .post-modal .submit-btn:hover {
+    transform: translateX(5px);
+}
+
+.post-modal .submit-btn {
+    margin-right: 8px;
+    width: max-content;
+    font-family: "Roboto Mono", monospace !important;
+    font-size: 20px !important;
+}
+
+.post-modal .delete-btn {
+    background-color: red;
+}
+
+
+.no-dp {
+    border: 3px solid #655a7c;
+    border-radius: 50%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.display-pic-field > input {
+    border: none;
+}
+
+
+.button-div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.display-pic {
+    height: 100%;
+    width: 250px;
+    border-radius: 50%;
+    border: 3px solid #ab92bf;
+}
+
+.post-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    grid-auto-rows: min-content;
+    gap: 6px;
+    padding: 15px;
+    background-color: #ab92bf;
+}
+
+.post-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #cef9f2;
+    border-radius: 4px;
+    padding: 4px;
+    font-family: "Roboto Mono", monospace;
+    transition: 300ms;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+.post-card-image {
+    width: 100%;
+    height: 290px;
+    border-radius: 4px;
+}
+
+
+.post-modal {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    justify-items: center;
+    overflow-y: auto;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: 100%;
+    min-width: 500px;
+    max-width: 600px;
+    color: black;
+    padding: 5px;
+    font-family: "Roboto Mono", monospace;
+}
+
+.close-modal {
+    align-self: flex-end;
+    border: 2px solid white;
+    background-color: red;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Roboto Mono", monospace;
+    border-radius: 4px;
+    color: white;
+}
+
+.top-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-modal .time-stamp {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    margin-right: 5px;
+}
+
+.post-modal .top-field {
+    font-size: 24px;
+    background-color: white;
+    padding: 5px;
+}
+
+.post-modal .caption {
+    font-size: 18px;
+    background-color: white;
+    padding: 5px;
+}   
+
+.post-container input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.post-container textarea {
+    width: 100%;
+    box-sizing: border-box;
+}

@@ -1,0 +1,16 @@
+.new-post-container {
+    background-color: #AFC1D6;
+    font-family: "Roboto Mono", monospace;
+    min-height: calc(100vh - var(--navbar-height));
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 1fr) 1fr;
+    grid-template-rows: 1fr;
+    font-family: "Roboto Mono", monospace;
+}
+
+.new-post-form {
+    grid-column: 2;
+    background-color: #CEF9F2;
+    box-shadow: 8px 0px 8px #888, -8px 0px 8px #888;
+    text-align: center;
+}

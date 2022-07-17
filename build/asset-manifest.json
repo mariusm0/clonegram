@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/clonegram/static/css/main.b2987943.css",
+    "main.js": "/clonegram/static/js/main.97513a6e.js",
+    "index.html": "/clonegram/index.html",
+    "main.b2987943.css.map": "/clonegram/static/css/main.b2987943.css.map",
+    "main.97513a6e.js.map": "/clonegram/static/js/main.97513a6e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2987943.css",
+    "static/js/main.97513a6e.js"
+  ]
+}
